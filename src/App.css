@@ -221,7 +221,10 @@ main form.event-form-background {
     border-radius: 1.5rem;
     background-color: #242323;
     width: 80rem;
-    height: 40rem;
+    height: fit-content;
+    background-size: cover;
+    padding: 2rem;
+    margin-top: 2rem;
 }
 main div.event-form {
     display: flex;
@@ -256,6 +259,11 @@ main div.event-form button.add-event {
 /* Date inputs */
 main div.event-form div.date-input {
     text-align: left;
+}
+
+main .form_error {
+    font-style: italic;
+    font-size: 1.1rem;
 }
 
 /* Output table for events */
