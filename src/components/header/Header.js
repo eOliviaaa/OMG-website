@@ -1,7 +1,9 @@
 import {useState} from "react";
+import { useLocation } from 'react-router-dom';
 
 const Header = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const location = useLocation();
 
     return (
         <header>
@@ -12,6 +14,11 @@ const Header = () => {
                         <div>Oslo<span>M</span>et</div>
                         <div>Gaming</div>
                     </div>
+                    { location.pathname === "/admin" ?
+                        <><span className="divider"></span>
+                        <div className="header-admin">Admin</div></>
+                        : null
+                    }
                 </a>
             </figure>
 

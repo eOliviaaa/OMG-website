@@ -1,6 +1,8 @@
 
-const Admin = () => {
-    return "admin";
-}
+export default function Admin() {
+    return (
+        <main>
 
-export default Admin;
+        </main>
+    );
+}
