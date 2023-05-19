@@ -280,3 +280,19 @@ table.event-table th, td {
     padding: 8px;
     border: 0.2rem var(--bodytext-color) solid;
 }
+
+/* Footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    background-color: var(--header-color);
+}
+/* TODO: Socials text need fixing */
+footer div.socials li {
+    list-style-type: none;
+    margin: 0.5rem;
+}

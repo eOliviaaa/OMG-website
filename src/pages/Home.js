@@ -1,4 +1,13 @@
+import Footer from "../components/footer/Footer.js"
 
 export default function Home() {
-    return "Home";
+    return (
+        <body>
+            <main>
+                test
+            </main>
+            <Footer />
+        </body>
+
+    );
 }
