@@ -1,4 +1,4 @@
-import { Formik, Form, Field } from "formik";
+import { Formik } from "formik";
 import * as Yup from 'yup';
 
 const EventSchema = Yup.object().shape({
@@ -41,7 +41,7 @@ export default function EventForm() {
                 touched,
             }) => (
                 <form className="event-form-background" id="event-form-tag" onSubmit={handleSubmit}>
-                    <h1>Event From</h1>
+                    <h1>Event Form</h1>
                     <div className="event-form">
                         <div>
                             <h2>Norwegian form</h2>

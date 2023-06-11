@@ -1,10 +1,11 @@
-import Footer from "../components/footer/Footer.js"
+import Footer from "../components/footer/Footer.js";
+
 
 export default function Home() {
     return (
         <body>
             <main>
-                test
+                Placeholder
             </main>
             <Footer />
         </body>
