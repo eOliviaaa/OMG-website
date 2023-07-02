@@ -297,3 +297,17 @@ footer div.socials li {
     margin: 0.5rem;
 }
 
+main .welcome {
+    position: relative;
+    text-align: center;
+    color: var(--bodytext-color);
+}
+main .welcome img{
+    mask-image: linear-gradient(to right,black, transparent);
+
+}
+main .welcome .textContainer {
+    position: absolute;
+    right: 2rem;
+    top: 30%;
+}
