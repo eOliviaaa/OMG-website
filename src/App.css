@@ -3,6 +3,7 @@
     --bodytext-color: #f2f2f2;
     --oslomet-red: #cc0909;
     --header-color: #161616;
+    --background-color: #1B1B1B;
 }
 
 main {
@@ -11,10 +12,10 @@ main {
 }
 
 body {
-    background-color: #2d2d2d;
+    background-color: var(--background-color);
     margin: 0;
     color: var(--bodytext-color);
-    font-family: Calibri;
+    font-family: Calibri, serif;
     text-align: center;
     font-size: 1.25rem;
 }
@@ -304,10 +305,4 @@ main .welcome {
 }
 main .welcome img{
     mask-image: linear-gradient(to right,black, transparent);
-
-}
-main .welcome .textContainer {
-    position: absolute;
-    right: 2rem;
-    top: 30%;
 }
