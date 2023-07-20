@@ -2,6 +2,10 @@
 .en, .nb {display: none;}
 .en:lang(en):not(.item), .nb:lang(nb):not(.item) { display:block; }
 
+* {
+    box-sizing: border-box;
+}
+
 :root {
     --bodytext-color: #f2f2f2;
     --oslomet-red: #cc0909;
