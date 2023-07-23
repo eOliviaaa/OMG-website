@@ -1,7 +1,8 @@
 import Footer from "../components/footer/Footer.js";
-// import EventCarousel from "../components/home-main/EventCarousel.js";
 import Welcome from "../components/home-main/Welcome.js";
 import Events from "../components/home-main/Events.js"
+import BoardMembers from "../components/home-main/BoardMembers.js"
+import GeneralInfo from "../components/home-main/GeneralInfo.js"
 
 export default function Home() {
     return (
@@ -9,6 +10,8 @@ export default function Home() {
             <main>
                 <Welcome />
                 <Events />
+                <GeneralInfo />
+                <BoardMembers />
             </main>
             <Footer />
         </body>

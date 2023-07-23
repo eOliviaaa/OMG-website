@@ -11,6 +11,7 @@
 
 main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 }
 
@@ -288,12 +289,9 @@ table.event-table th, td {
 /* Footer */
 footer {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-
+    grid-template-columns: auto auto auto;
     background-color: var(--header-color);
+    width: 100%;
 }
 /* TODO: Socials text need fixing */
 footer div.socials li {
