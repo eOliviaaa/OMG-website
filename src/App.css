@@ -307,3 +307,6 @@ main .welcome {
 main .welcome img{
     mask-image: linear-gradient(to right,black, transparent);
 }
+main a {
+    color: red;
+}

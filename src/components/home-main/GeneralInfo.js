@@ -14,7 +14,7 @@ export default function GeneralInfo() {
             backgroundColor: '#0f0f0f',
             color: 'var(--bodytext-color)',
             margin: '2rem auto',
-            width: '20rem'
+            width: '30rem'
         },
         positioningStyle:{
             display: 'grid',
@@ -36,7 +36,11 @@ export default function GeneralInfo() {
                             Membership
                         </Typography>
                         <Typography variant={'body2'}>
-                            There will be text here describing how to become a member.
+                            Currently there is no way to become a member online. <br/>
+                            However you can sign up by talking to a boardmember at our events or the lounge if it is open. <br/><br/>
+                            The price of being a member is 200kr per semester.
+                            <br/><br/>
+                            Being a member gives you free access to all our events and voting power at our general assemblies.
                         </Typography>
                     </CardContent>
 
@@ -45,7 +49,12 @@ export default function GeneralInfo() {
                             Medlemskap
                         </Typography>
                         <Typography variant={'body2'}>
-                            Det kommer til å være tekst her som beskriver hvordan man blir medlem av organisasjonen.
+                            Det er ikke mulig å registrere seg som medlem online enda. <br/>
+                            Du kan møte opp på arrangementer og snakke med et styremedlem
+                            eller komme innom spillstua om den er åpen for å bli registrert som medlem.<br/><br/>
+                            Medlemskap koster 200kr per semester.
+                            <br/><br/>
+                            Ved å være medlem så får du gratis inngang til alle arrangementene våre og stemmerett ved allmøtene.
                         </Typography>
                     </CardContent>
                 </Card>
@@ -56,7 +65,14 @@ export default function GeneralInfo() {
                             Voulenteer
                         </Typography>
                         <Typography variant={'body2'}>
-                            There will be text here describing how to become a voulenteer.
+                            Events require a lot of work and would never be possible without our voulenteers. <br/><br/>
+                            This work can be everything from being at stands to increase our visibility and recruiting new members,
+                            helping to setup network and electrical infrastructure at LANs, moving tables and chairs for events etc.
+                            <br/><br/>
+                            We do not require any previous expirience nor do we expect you to always be on call. You get to choose when you want to help out.
+                            <br/><br/>
+                            By being a voulenteer you get benefits like free membership for the next semester and free food and snacks at our LANs.
+                            We also host a voulenteer appreciation day every semester to show our gratitude to you.
                         </Typography>
                     </CardContent>
 
@@ -76,7 +92,13 @@ export default function GeneralInfo() {
                             Roleplaying
                         </Typography>
                         <Typography variant={'body2'}>
-                            There will be text here describing roleplaying.
+                            Within OsloMet Gaming we have something we call Unplugged, which focuses on roleplaying games like D&D and Pathfinder,
+                            board games, card games like Magic: the Gathering, and so on. <br/><br/>
+
+                            Today we have many and varied roleplaying groups that play most of the week days.
+                            You can also find some of these groups at our events plus a plethera of board games. <br/><br/>
+
+                            For more information contact: <a href={'#UnpluggedManager'}>Markus Olsen</a>
                         </Typography>
                     </CardContent>
 

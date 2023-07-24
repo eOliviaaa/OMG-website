@@ -22,6 +22,29 @@ export default function BoardMembers() {
         }
     }
 
+    // Here you can change the names of board members
+    const boardMemberName={
+        leader:'Alexander Natvig',
+        viceLeader:'Eline Sørensen',
+        treasurer:'John Ruben Øystein',
+        prManager:'Julian Krabbe',
+        eventManager:'Leila Jakobsen',
+        unpluggedManager:'Markus Olsen',
+        voulenteerManager:'Kris Doyle',
+        itManager:'Olivia Kristiansen'
+    }
+    // Here you can change the board members discord handles
+    const boardMemberDiscord={
+        leader:'xandair',
+        viceLeader:'elinethewitch',
+        treasurer:'maybechondrion',
+        prManager:'gamerforfun',
+        eventManager:'tartaerii',
+        unpluggedManager:'kenoo',
+        voulenteerManager:'xander.one.trick',
+        itManager:'eoliviaaa'
+    }
+
     return(
         <Paper elevation={0} style={styles.paperStyle}>
             <div className={'en'}>
@@ -61,7 +84,7 @@ export default function BoardMembers() {
             <h2 className={'en'}>Board Members</h2>
             <h2 className={'nb'}>Styremedlemmer</h2>
             <div style={styles.positioningStyle}>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'Leader'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -76,13 +99,13 @@ export default function BoardMembers() {
                             Leder
                         </Typography>
                         <Typography variant={'body2'}>
-                            Alexander Natvig
+                            {boardMemberName.leader}
                             <br/>
-                            Discord: xandair
+                            Discord: {boardMemberDiscord.leader}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'ViceLeader'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -97,13 +120,13 @@ export default function BoardMembers() {
                             Nestleder
                         </Typography>
                         <Typography variant={'body2'}>
-                            Eline Sørensen
+                            {boardMemberName.viceLeader}
                             <br/>
-                            Discord: elinethewitch
+                            Discord: {boardMemberDiscord.viceLeader}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'Treasurer'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -118,13 +141,13 @@ export default function BoardMembers() {
                             Økonomiansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            John Ruben Øystein
+                            {boardMemberName.treasurer}
                             <br/>
-                            Discord: maybechondrion
+                            Discord: {boardMemberDiscord.treasurer}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'PRManager'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -139,13 +162,13 @@ export default function BoardMembers() {
                             PR Ansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            Julian Krabbe
+                            {boardMemberName.prManager}
                             <br/>
-                            Discord: gamerforfun
+                            Discord: {boardMemberDiscord.prManager}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'EventManager'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -160,13 +183,13 @@ export default function BoardMembers() {
                             Arrangementansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            Leila Jakobsen
+                            {boardMemberName.eventManager}
                             <br/>
-                            Discord: tartaerii
+                            Discord: {boardMemberDiscord.eventManager}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'UnpluggedManager'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -181,13 +204,13 @@ export default function BoardMembers() {
                             Brettspillansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            Markus Olsen
+                            {boardMemberName.unpluggedManager}
                             <br/>
-                            Discord: kenoo
+                            Discord: {boardMemberDiscord.unpluggedManager}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'VoulenteerManager'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -202,13 +225,13 @@ export default function BoardMembers() {
                             Frivilligansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            Kris Doyle
+                            {boardMemberName.voulenteerManager}
                             <br/>
-                            Discord: xander.one.trick
+                            Discord: {boardMemberDiscord.voulenteerManager}
                         </Typography>
                     </CardContent>
                 </Card>
-                <Card style={styles.cardStyle}>
+                <Card style={styles.cardStyle} id={'ITManager'}>
                     <CardMedia
                         sx={{height: '25rem'}}
                         image={'../../img/omg_logo_black.png'}
@@ -223,9 +246,9 @@ export default function BoardMembers() {
                             IT Ansvarlig
                         </Typography>
                         <Typography variant={'body2'}>
-                            Olivia Kristiansen
+                            {boardMemberName.itManager}
                             <br/>
-                            Discord: eoliviaaa
+                            Discord: {boardMemberDiscord.itManager}
                         </Typography>
                     </CardContent>
                 </Card>
