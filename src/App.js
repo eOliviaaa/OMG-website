@@ -11,7 +11,7 @@ export default function App({ children }) {
       <Router>
           <Header />
           <Routes>
-              <Route exact path='/' exact element={ <Home /> } />
+              <Route exact path='/' element={ <Home /> } />
               <Route path='/admin' element={ <Admin /> } />
           </Routes>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
