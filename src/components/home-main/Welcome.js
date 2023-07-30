@@ -6,7 +6,7 @@ export default function Welcome(){
     const styles={
         paperStyle:{
             padding:'60px 20px',
-            width:'110rem' ,
+            width:'100rem',
             margin:'0.2rem auto',
             background:"var(--background-color)"
         },
