@@ -1,7 +1,6 @@
 import {Paper} from '@mui/material';
-import {Card, CardActions, CardContent, CardMedia, Typography, Button} from '@mui/material';
-// import {google, outlook, office365, yahoo, ics} from "calendar-link"
-import $ from 'jquery';
+import EventCards from './EventCards';
+import React from 'react';
 
 export default function Events() {
     const styles={
@@ -20,27 +19,17 @@ export default function Events() {
             textAlign: 'left'
         }
     }
-    const eventArray = []
-
-    function getEvents() { // Retreives the events from controller with a GET function.
-        $.get("http://localhost:8080/event/getAllEvents", function (data) {
-            eventArray.push(data);
-        });
-    }
-    getEvents();
-    console.log(eventArray);
-
-    function eventloop(data){
-        let out;
-        for (const event of data) {
-            console.log(data);
-        }
-        $("#eventList").html(out);
-    }
+    
     return( // TODO: This should be generated from the database
         <Paper elevation={0} style={styles.paperStyle}>
             <h2>Events</h2>
             <div id={'eventList'}>
+
+                {/*{renderEvents()}*/}
+
+                <EventCards />
+
+
 
                 {/*<Card style={styles.cardStyle}>*/}
                 {/*    <CardMedia*/}
