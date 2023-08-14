@@ -24,45 +24,7 @@ export default function Events() {
         <Paper elevation={0} style={styles.paperStyle}>
             <h2>Events</h2>
             <div id={'eventList'}>
-
-                {/*{renderEvents()}*/}
-
                 <EventCards />
-
-
-
-                {/*<Card style={styles.cardStyle}>*/}
-                {/*    <CardMedia*/}
-                {/*        sx={{height: '15rem'}}*/}
-                {/*        image={'../../img/temp.png'}*/}
-                {/*        title={'omg logo'}*/}
-                {/*    />*/}
-
-                {/*    <CardContent>*/}
-                {/*        <Typography gutterBottom variant={'h5'} component={'div'} className={'en'}>*/}
-                {/*            Event Header*/}
-                {/*        </Typography>*/}
-                {/*        <Typography gutterBottom variant={'h5'} component={'div'} className={'nb'}>*/}
-                {/*            Event Overskrift*/}
-                {/*        </Typography>*/}
-
-                {/*        <Typography variant={'body2'} className={'en'}>*/}
-                {/*            This is some text to simulate an events description. <br />*/}
-                {/*            There could be specifications aobut place and date or maybe even time.*/}
-                {/*        </Typography>*/}
-                {/*        <Typography variant={'body2'} className={'nb'}>*/}
-                {/*            Dette er litt tekst for å simulere brødtekst i arrangementer. <br />*/}
-                {/*            Her kan en legge til spesifikasjoner som sted, tid eller dato.*/}
-                {/*        </Typography>*/}
-                {/*    </CardContent>*/}
-
-                {/*    <CardActions>*/}
-                {/*        <Button size={'small'}>*/}
-                {/*            <a href={"https://www.google.com"} target={'_blank'} rel="noopener noreferrer" className={'en'}>Save to calendar</a>*/}
-                {/*            <a href={"https://www.google.com"} target={'_blank'} rel="noopener noreferrer" className={'nb'}>Legg til i kalender</a>*/}
-                {/*        </Button>*/}
-                {/*    </CardActions>*/}
-                {/*</Card>*/}
             </div>
         </Paper>
     );

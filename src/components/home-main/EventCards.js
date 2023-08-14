@@ -39,18 +39,12 @@ export default function EventCards(){
 
                 <div style={styles.positioningStyle}>
                     <CardContent>
-                        <Typography gutterBottom variant={'h5'} component={'div'} className={'en'}>
+                        <Typography gutterBottom variant={'h5'} component={'div'}>
                             {d.enHeader}
                         </Typography>
-                        <Typography gutterBottom variant={'h5'} component={'div'} className={'nb'}>
-                            {d.noHeader}
-                        </Typography>
 
-                        <Typography variant={'body2'} className={'en'}>
+                        <Typography variant={'body2'}>
                             {d.enDesc}
-                        </Typography>
-                        <Typography variant={'body2'} className={'nb'}>
-                            {d.noDesc}
                         </Typography>
                     </CardContent>
                     <CardContent style={{textAlign: "right"}}>
@@ -58,9 +52,6 @@ export default function EventCards(){
                         <Typography variant={'body2'} className={'nb'}>0 måned 2023 / 17:00</Typography>
                     </CardContent>
                 </div>
-
-
-
 
                 <CardActions>
                     <Button size={'small'}>
