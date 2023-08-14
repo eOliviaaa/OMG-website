@@ -25,7 +25,7 @@ export default function EventCards(){
         }
     }
 
-    const { isLoading, error, data} = useFetch("http://localhost:8080/event/getAllEvents");
+    const { isLoading, error, data} = useFetch("http://localhost:8080/event/getAll");
 
     const listItems = data?.map((d, index) => ( index < 3 && (
 
