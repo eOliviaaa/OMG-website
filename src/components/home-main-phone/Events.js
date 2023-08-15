@@ -5,7 +5,7 @@ import useFetch from 'react-fetch-hook';
 export default function Events() {
     const styles={
         paperStyle:{
-            width:'100rem',
+            width:'20rem',
             padding:'0.3rem 0.08rem',
             margin:'2rem auto',
             background: '#161616',
@@ -15,7 +15,7 @@ export default function Events() {
             backgroundColor: '#0f0f0f',
             color: 'var(--bodytext-color)',
             margin: '2rem auto',
-            maxWidth: '45rem',
+            maxWidth: '15rem',
             textAlign: 'left'
         },
         positioningStyle:{
@@ -31,25 +31,22 @@ export default function Events() {
             <Card style={styles.cardStyle} key={d.id}>
                 <CardMedia
                     sx={{height: '15rem'}}
-                    image={'../../img/temp.png'}
+                    image={'../../img/omg-logo-black-bg-rounded.png'}
                     title={'omg logo'}
                 />
+                <CardContent>
+                    <Typography gutterBottom variant={'h5'} component={'div'}>
+                        {d.header}
+                    </Typography>
 
-                <div style={styles.positioningStyle}>
-                    <CardContent>
-                        <Typography gutterBottom variant={'h5'} component={'div'}>
-                            {d.header}
-                        </Typography>
-
-                        <Typography variant={'body2'}>
-                            {d.description}
-                        </Typography>
-                    </CardContent>
-                    <CardContent style={{textAlign: "right"}}>
-                        <Typography variant={'body2'} className={'en'}>0th Month 2023 / 17:00</Typography>
-                        <Typography variant={'body2'} className={'nb'}>0 måned 2023 / 17:00</Typography>
-                    </CardContent>
-                </div>
+                    <Typography variant={'body2'}>
+                        {d.description}
+                    </Typography>
+                </CardContent>
+                <CardContent>
+                    <Typography variant={'body2'} className={'en'}>0th Month 2023 / 17:00</Typography>
+                    <Typography variant={'body2'} className={'nb'}>0 måned 2023 / 17:00</Typography>
+                </CardContent>
 
                 <CardActions>
                     <Button size={'small'}>

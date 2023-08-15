@@ -42,7 +42,7 @@ hr.hidden {
 }
 
 
-/* Main header element */
+/* === Main header element === */
 header {
     overflow: hidden;
     background-color: var(--header-color);
@@ -114,27 +114,34 @@ header .langButtons .langEnButton {
     cursor: pointer;
 }
 
-/* Footer */
-footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-    background-color: var(--header-color);
-    width: 100%;
-}
-/* TODO: Socials text need fixing */
-footer div.socials li {
-    list-style-type: none;
-    margin: 0.5rem;
-}
+/* === Header end === */
 
+/* === Welcome component ===*/
 main .welcome {
     position: relative;
     text-align: center;
     color: var(--bodytext-color);
 }
 main .welcome img{
-    mask-image: linear-gradient(to right,black, transparent);
+    /*mask-image: linear-gradient(to right,black, transparent);*/
 }
 main a {
     color: red;
 }
+
+/* === Welcome end === */
+
+/* === Footer === */
+footer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: var(--header-color);
+    width: 100%;
+}
+/* ! TODO: Socials text need fixing ! */
+footer div.socials li {
+    list-style-type: none;
+    margin: 0.5rem;
+}
+
+/* === Footer end === */
