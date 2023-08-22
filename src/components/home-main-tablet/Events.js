@@ -27,6 +27,14 @@ export default function Events() {
 
     const { isLoading, error, data} = useFetch("http://localhost:8080/event/getAll");
 
+    const dateOptions = {
+        month: "long",
+        day: "numeric",
+        hour: "numeric",
+        minute: "numeric",
+        weekday: "long"
+    }
+
     const listItems = data?.map((d, index) => ( index < 3 && (
             <Card style={styles.cardStyle} key={d.id}>
                 <CardMedia
@@ -45,8 +53,12 @@ export default function Events() {
                         </Typography>
                     </CardContent>
                     <CardContent style={{textAlign: "right"}}>
-                        <Typography variant={'body2'} className={'en'}>0th Month 2023 / 17:00</Typography>
-                        <Typography variant={'body2'} className={'nb'}>0 måned 2023 / 17:00</Typography>
+                        <Typography variant={'body2'} className={'en'}>
+                            {new Date(d.startTime).toLocaleString('en-gb', dateOptions)}
+                        </Typography>
+                        <Typography variant={'body2'} className={'nb'}>
+                            {new Date(d.startTime).toLocaleString('no-nb', dateOptions)}
+                        </Typography>
                     </CardContent>
                 </div>
 
