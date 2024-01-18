@@ -19,7 +19,7 @@ body {
     background-color: var(--background-color);
     margin: 0;
     color: var(--bodytext-color);
-    font-family: Calibri, serif;
+    font-family: "Nimbus Sans", serif;
     text-align: center;
     font-size: 1.25rem;
 }
