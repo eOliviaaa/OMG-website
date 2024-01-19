@@ -19,7 +19,7 @@ export default function Welcome(){
         textWelcome:{
             position: 'absolute',
             right: '10rem',
-            top:'20%',
+            top:'0%',
             width: '40%'
         }
     }

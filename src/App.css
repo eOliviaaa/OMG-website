@@ -134,14 +134,9 @@ main a {
 /* === Footer === */
 footer {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     background-color: var(--header-color);
     width: 100%;
-}
-/* ! TODO: Socials text need fixing ! */
-footer div.socials li {
-    list-style-type: none;
-    margin: 0.5rem;
 }
 
 /* === Footer end === */

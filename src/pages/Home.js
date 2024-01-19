@@ -1,4 +1,3 @@
-import Footer from "../components/footer/Footer.js";
 import Welcome from "../components/home-main/Welcome.js";
 import Events from "../components/home-main/Events.js"
 import BoardMembers from "../components/home-main/BoardMembers.js"
@@ -30,7 +29,6 @@ export default function Home() {
                     <GeneralInfoMobile />
                     <BoardMembersMobile />
                 </main>
-                <Footer />
             </body>
         );
     }
@@ -43,7 +41,6 @@ export default function Home() {
                 <GeneralInfoTablet />
                 <BoardMembersTablet />
             </main>
-            <Footer />
             </body>
         );
     }
@@ -56,7 +53,6 @@ export default function Home() {
                     <GeneralInfo />
                     <BoardMembers />
                 </main>
-                <Footer />
             </body>
 
         );
