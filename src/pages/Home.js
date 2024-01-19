@@ -35,12 +35,12 @@ export default function Home() {
     if (tabletView) {
         return (
             <body>
-            <main>
-                <WelcomeTablet />
-                <EventsTablet />
-                <GeneralInfoTablet />
-                <BoardMembersTablet />
-            </main>
+                <main>
+                    <WelcomeTablet />
+                    <EventsTablet />
+                    <GeneralInfoTablet />
+                    <BoardMembersTablet />
+                </main>
             </body>
         );
     }

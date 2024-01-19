@@ -1,8 +1,10 @@
-
+import Registry from "../components/members-main/Registry.js"
 export default function Members() {
-    <body>
-        <main>
-            <div>test</div>
-        </main>
-    </body>
+    return (
+        <body>
+            <main>
+                <Registry/>
+            </main>
+        </body>
+    )
 }
